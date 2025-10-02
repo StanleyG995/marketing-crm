@@ -1,0 +1,84 @@
+// ======================================
+// PRIMARY 
+// ======================================
+$primary-h: 270;
+$primary-s: 85%;   
+$primary-l: 45%;   
+
+$primary: (
+  100: hsl($primary-h, $primary-s, 95%),
+  200: hsl($primary-h, $primary-s, 85%),
+  300: hsl($primary-h, $primary-s, 75%),
+  400: hsl($primary-h, $primary-s, 65%),
+  500: hsl($primary-h, $primary-s, 55%),
+  600: hsl($primary-h, $primary-s, $primary-l),
+  700: hsl($primary-h, $primary-s, 35%),
+  800: hsl($primary-h, $primary-s, 25%),
+  900: hsl($primary-h, $primary-s, 15%)
+);
+
+// ======================================
+// SECONDARY
+// ======================================
+$secondary-h: 170;
+$secondary-s: 70%;
+$secondary-l: 45%;
+
+$secondary: (
+  100: hsl($secondary-h, $secondary-s, 95%),
+  200: hsl($secondary-h, $secondary-s, 85%),
+  300: hsl($secondary-h, $secondary-s, 75%),
+  400: hsl($secondary-h, $secondary-s, 65%),
+  500: hsl($secondary-h, $secondary-s, 55%),
+  600: hsl($secondary-h, $secondary-s, $secondary-l),
+  700: hsl($secondary-h, $secondary-s, 35%),
+  800: hsl($secondary-h, $secondary-s, 25%),
+  900: hsl($secondary-h, $secondary-s, 15%)
+);
+
+// ======================================
+// NEUTRAL
+// ======================================
+$neutral-h: 220;
+$neutral-s: 10%;
+$neutral-l: 98%;
+
+$neutral: (
+  50:  hsl($neutral-h, $neutral-s, 98%),
+  100: hsl($neutral-h, $neutral-s, 95%),
+  200: hsl($neutral-h, $neutral-s, 90%),
+  300: hsl($neutral-h, $neutral-s, 80%),
+  400: hsl($neutral-h, $neutral-s, 70%),
+  500: hsl($neutral-h, $neutral-s, 60%),
+  600: hsl($neutral-h, $neutral-s, 45%),
+  700: hsl($neutral-h, $neutral-s, 35%),
+  800: hsl($neutral-h, $neutral-s, 20%),
+  900: hsl($neutral-h, $neutral-s, 10%)
+);
+
+// ======================================
+// NEUTRAL-DARK
+// ======================================
+$neutral-dark-h: 220;
+$neutral-dark-s: 10%;
+$neutral-dark-l: 10%;
+
+$neutral-dark: (
+  50:  hsl($neutral-dark-h, $neutral-dark-s, 95%),
+  100: hsl($neutral-dark-h, $neutral-dark-s, 80%),
+  200: hsl($neutral-dark-h, $neutral-dark-s, 70%),
+  300: hsl($neutral-dark-h, $neutral-dark-s, 55%),
+  400: hsl($neutral-dark-h, $neutral-dark-s, 45%),
+  500: hsl($neutral-dark-h, $neutral-dark-s, 35%),
+  600: hsl($neutral-dark-h, $neutral-dark-s, 25%),
+  700: hsl($neutral-dark-h, $neutral-dark-s, 18%),
+  800: hsl($neutral-dark-h, $neutral-dark-s, 12%),
+  900: hsl($neutral-dark-h, $neutral-dark-s, 8%)
+);
+
+// ======================================
+// Helper for getting color
+// ======================================
+@function color($palette, $shade) {
+  @return map-get($palette, $shade);
+}
