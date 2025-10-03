@@ -1,4 +1,5 @@
-import Card from './components/Card'
+import Card from './components/molecules/Card'
+import Button from './components/atoms/Button'
 
 function App() {
 
@@ -7,6 +8,9 @@ function App() {
       <Card title = 'Tytuł'>
         <p>Treść wewnątrz karty.</p>
       </Card>
+      <Button className = 'button' variant = 'primary' onclick = { () => console.log('Działa!') }>
+        Kliknij mnie!
+      </Button>
     </>
   )
 }
