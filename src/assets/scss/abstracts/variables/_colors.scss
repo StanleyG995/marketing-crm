@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 // ======================================
 // PRIMARY 
 // ======================================
@@ -80,5 +82,5 @@ $neutral-dark: (
 // Helper for getting color
 // ======================================
 @function color($palette, $shade) {
-  @return map-get($palette, $shade);
+  @return map.get($palette, $shade);
 }

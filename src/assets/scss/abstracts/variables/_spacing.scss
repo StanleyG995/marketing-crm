@@ -1,0 +1,14 @@
+@use 'sass:map';
+
+$space: (
+    xs: 4px,
+    s: 8px,
+    m: 16px,
+    l: 24px,
+    xl: 32px,
+    xxl: 48px
+);
+
+@function space($size) {
+  @return map.get($space, $size);
+}

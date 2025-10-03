@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 $radius: (
     xs: 4px,
     s: 8px,
@@ -7,6 +9,6 @@ $radius: (
     full: 9999px
 );
 
-@function radius($radius, $size) {
-  @return map-get($radius, $size);
+@function radius($size) {
+  @return map.get($radius, $size);
 }
