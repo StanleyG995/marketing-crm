@@ -1,5 +1,7 @@
 @use '../assets/scss/abstracts/variables/colors' as *;
+@use '../assets/scss/abstracts/variables/radius' as *;
 
 .card {
-    background: color($neutral, 200)
+    background: color($neutral, 200);
+    border-radius: radius($radius, s);
 }
