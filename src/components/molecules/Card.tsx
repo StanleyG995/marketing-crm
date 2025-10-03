@@ -1,5 +1,5 @@
 import React from 'react'
-import type { CardProps } from '../types/Card.ts'
+import type { CardProps } from '../../types/Card.ts'
 import '../assets/scss/components/Card.scss'
 
 const Card: React.FC<CardProps> = ( {title, children} ) => {
