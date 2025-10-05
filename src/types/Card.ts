@@ -1,4 +1,5 @@
 export type CardProps = {
-    title: string;
     children: React.ReactNode
+    title: string;
+    className?: string
 }

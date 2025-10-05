@@ -1,0 +1,27 @@
+@use '../../assets/scss/abstracts/variables/colors' as *;
+@use '../../assets/scss/abstracts/variables/radius' as *;
+@use '../../assets/scss/abstracts/variables/spacing' as *;
+
+.base {
+    background-color: color($neutral, 200);
+    border: 1px solid color($neutral, 800);
+    border-radius: radius(s);
+    color: color($neutral, 800);
+    margin: space(m);
+    padding: space(s) space(m);
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+    &:hover {
+        background-color: color($neutral, 100);
+    }
+}
+
+.primary {
+    background-color: color($primary, 600);
+    border-color: transparent;
+    color: color($neutral, 100);
+    
+    &:hover {
+        background-color: color($primary, 500);
+    }
+}

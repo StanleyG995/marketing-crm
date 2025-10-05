@@ -1,9 +1,24 @@
 import React from 'react'
 import type { ButtonProps } from '../../types/Button'
+import styles from './Button.module.scss'
 
-const Button: React.FC<ButtonProps> = ( {children, onclick, className} ) => {
+const Button: React.FC<ButtonProps> = ( {children, onclick, className, variant = 'base', size = 'm'} ) => {
+    
+    const classes = [
+        styles.base,
+        styles[variant],
+        styles[size],
+        className
+        
+    ].filter(Boolean).join(" ")
+
     return (
-        <button className = {className} onClick = {onclick}> { children }</button>
+        <button 
+            className = {classes} 
+            onClick = {onclick}
+            > 
+                { children }        
+        </button>
     )
 }
 

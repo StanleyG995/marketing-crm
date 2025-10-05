@@ -1,9 +1,0 @@
-@use '../abstracts/variables/colors' as *;
-@use '../abstracts/variables/radius' as *;
-@use '../abstracts/variables/spacing' as *;
-
-.card {
-    background: color($neutral, 200);
-    border-radius: radius(s);
-    padding: space(m)
-}

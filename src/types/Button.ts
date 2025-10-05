@@ -2,7 +2,7 @@ export type ButtonProps = {
     children: React.ReactNode
     onclick?: (e: React.MouseEvent<HTMLButtonElement>) => void
 
-    variant?: 'primary' | 'secondary' | 'danger'
+    variant?: 'base' | 'primary' | 'secondary' | 'danger' | 'warning' | 'success'
     size?: 's' | 'm' | 'l'
     icon?: React.ReactNode
     className?: string
