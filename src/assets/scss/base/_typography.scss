@@ -15,11 +15,43 @@ $font-size: (
   xxl: 3rem      // 32px
 );
 
-@function space($size) {
+@function font-size($size) {
   @return map.get($font-size, $size);
 }
 
 body {
     font-family: $font-main;
 }
+
+.text-tiny {
+    font-size: font-size(xs);
+}
+
+.text-small {
+    font-size: font-size(s);
+}
+
+.text-medium {
+    font-size: font-size(m);
+}
+
+.text-large {
+    font-size: font-size(l);
+}
+
+.heading-small {
+    font-size: font-size(l);
+}
+
+.heading-medium {
+    font-size: font-size(xl);
+}
+
+.heading-large {
+    font-size: font-size(xxl);
+}
+
+
+
+
 

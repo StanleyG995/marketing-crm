@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Card title = 'Tytuł'>
-        <p>Treść wewnątrz karty.</p>
+        <p className = 'text-medium'>Treść wewnątrz karty.</p>
       </Card>
       <Button className = 'button' variant = 'primary' onclick = { () => console.log('Działa!') }>
         Kliknij mnie!
