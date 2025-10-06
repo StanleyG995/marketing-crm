@@ -14,6 +14,9 @@ function App() {
       <Button className = 'button'  onclick = { () => console.log('Działa!') }>
         Kliknij mnie!
       </Button>
+      <Button className = 'button'  onclick = { () => console.log('Działa!') }>
+        Kliknij mnie!
+      </Button>
     </>
   )
 }
