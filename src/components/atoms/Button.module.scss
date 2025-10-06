@@ -3,16 +3,24 @@
 @use '../../assets/scss/abstracts/variables/spacing' as *;
 
 .base {
+    align-items: center;
     background-color: color($neutral, 200);
     border: 1px solid color($neutral, 800);
     border-radius: radius(s);
     color: color($neutral, 800);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
     margin: space(m);
     padding: space(s) space(m);
     transition: background-color .3s ease-in-out, color .3s ease-in-out;
 
     &:hover {
         background-color: color($neutral, 100);
+    }
+
+    svg {
+        margin-right: space(s);
     }
 }
 
@@ -23,5 +31,15 @@
     
     &:hover {
         background-color: color($primary, 500);
+    }
+}
+
+.success {
+    background-color: color($success, 600);
+    border-color: transparent;
+    color: color($neutral, 100);
+    
+    &:hover {
+        background-color: color($success, 500);
     }
 }
