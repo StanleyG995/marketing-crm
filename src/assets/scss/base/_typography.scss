@@ -1,0 +1,25 @@
+@use 'sass:map';
+
+@import "@fontsource/inter/300.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/700.css";
+
+$font-main: "Inter", sans-serif;
+
+$font-size: (
+  xs: 0.625rem,  // 10px
+  s: 0.75rem,    // 12px
+  m: 1rem,       // 16px
+  l: 1.25rem,    // 20px
+  xl: 1.5rem,    // 24px
+  xxl: 3rem      // 32px
+);
+
+@function space($size) {
+  @return map.get($font-size, $size);
+}
+
+body {
+    font-family: $font-main;
+}
+
