@@ -34,6 +34,16 @@
     }
 }
 
+.secondary {
+    background-color: color($secondary, 700);
+    border-color: transparent;
+    color: color($neutral, 100);
+    
+    &:hover {
+        background-color: color($secondary, 600);
+    }
+}
+
 .success {
     background-color: color($success, 600);
     border-color: transparent;
@@ -41,5 +51,21 @@
     
     &:hover {
         background-color: color($success, 500);
+    }
+}
+
+.left {
+    svg {
+        order: 0;
+        margin-right: space(s);
+        margin-left: 0;
+    }
+}
+
+.right {
+    svg {
+        order: 1;
+        margin-left: space(s);
+        margin-right: 0;
     }
 }
