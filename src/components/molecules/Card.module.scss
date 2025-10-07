@@ -12,5 +12,9 @@
         flex-direction: column;
         gap: space(m);
     }
+
+    &__title {
+        font-weight: 700;
+    }
 }
 

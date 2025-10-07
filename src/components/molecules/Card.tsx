@@ -8,6 +8,7 @@ const Card: React.FC<CardProps> = ( {title, children, className} ) => {
     const classes = [
         styles.card,
         className,
+        'heading-small'
     ].filter(Boolean).join(" ")
     
     return (

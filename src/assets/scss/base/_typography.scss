@@ -1,4 +1,5 @@
 @use 'sass:map';
+@use '../abstracts/variables/colors' as *;
 
 @import "@fontsource/inter/300.css";
 @import "@fontsource/inter/500.css";
@@ -23,34 +24,43 @@ body {
     font-family: $font-main;
 }
 
-.text-tiny {
+.text {
+  color: color($neutral, 700);
+  font-weight: 400;
+
+  &-tiny {
     font-size: font-size(xs);
-}
+  }
 
-.text-small {
+  &-small {
     font-size: font-size(s);
-}
+  }
 
-.text-medium {
+  &-medium {
     font-size: font-size(m);
-}
+  }
 
-.text-large {
+  &-large {
     font-size: font-size(l);
+  }
 }
 
-.heading-small {
+.heading {
+  color: color($neutral, 900);
+  font-weight: 700;
+
+  &-small {
     font-size: font-size(l);
-}
+  }
 
-.heading-medium {
+  &-medium {
     font-size: font-size(xl);
-}
+  }
 
-.heading-large {
+  &-large {
     font-size: font-size(xxl);
+  }
 }
-
 
 
 

@@ -1,138 +1,117 @@
 @use 'sass:map';
 
 // ======================================
-// PRIMARY 
+// PRIMARY - fiolet
 // ======================================
 $primary-h: 270;
-$primary-s: 85%;   
-$primary-l: 45%;   
-
 $primary: (
-  100: hsl($primary-h, $primary-s, 95%),
-  200: hsl($primary-h, $primary-s, 85%),
-  300: hsl($primary-h, $primary-s, 75%),
-  400: hsl($primary-h, $primary-s, 65%),
-  500: hsl($primary-h, $primary-s, 55%),
-  600: hsl($primary-h, $primary-s, $primary-l),
-  700: hsl($primary-h, $primary-s, 35%),
-  800: hsl($primary-h, $primary-s, 25%),
-  900: hsl($primary-h, $primary-s, 15%)
+  100: hsl($primary-h, 95%, 95%),
+  200: hsl($primary-h, 95%, 85%),
+  300: hsl($primary-h, 95%, 75%),
+  400: hsl($primary-h, 95%, 65%),
+  500: hsl($primary-h, 95%, 55%),
+  600: hsl($primary-h, 95%, 45%),
+  700: hsl($primary-h, 95%, 35%),
+  800: hsl($primary-h, 95%, 25%),
+  900: hsl($primary-h, 95%, 15%)
 );
 
 // ======================================
-// SECONDARY
+// SECONDARY - turkus
 // ======================================
 $secondary-h: 170;
-$secondary-s: 70%;
-$secondary-l: 45%;
-
 $secondary: (
-  100: hsl($secondary-h, $secondary-s, 95%),
-  200: hsl($secondary-h, $secondary-s, 85%),
-  300: hsl($secondary-h, $secondary-s, 75%),
-  400: hsl($secondary-h, $secondary-s, 65%),
-  500: hsl($secondary-h, $secondary-s, 55%),
-  600: hsl($secondary-h, $secondary-s, $secondary-l),
-  700: hsl($secondary-h, $secondary-s, 35%),
-  800: hsl($secondary-h, $secondary-s, 25%),
-  900: hsl($secondary-h, $secondary-s, 15%)
+  100: hsl($secondary-h, 90%, 95%),
+  200: hsl($secondary-h, 90%, 85%),
+  300: hsl($secondary-h, 90%, 75%),
+  400: hsl($secondary-h, 90%, 65%),
+  500: hsl($secondary-h, 90%, 55%),
+  600: hsl($secondary-h, 90%, 45%),
+  700: hsl($secondary-h, 90%, 35%),
+  800: hsl($secondary-h, 90%, 25%),
+  900: hsl($secondary-h, 90%, 15%)
 );
 
 // ======================================
-// NEUTRAL
+// NEUTRAL - szarości
 // ======================================
 $neutral-h: 220;
-$neutral-s: 10%;
-$neutral-l: 98%;
-
 $neutral: (
-  50:  hsl($neutral-h, $neutral-s, 98%),
-  100: hsl($neutral-h, $neutral-s, 95%),
-  200: hsl($neutral-h, $neutral-s, 90%),
-  300: hsl($neutral-h, $neutral-s, 80%),
-  400: hsl($neutral-h, $neutral-s, 70%),
-  500: hsl($neutral-h, $neutral-s, 60%),
-  600: hsl($neutral-h, $neutral-s, 45%),
-  700: hsl($neutral-h, $neutral-s, 35%),
-  800: hsl($neutral-h, $neutral-s, 20%),
-  900: hsl($neutral-h, $neutral-s, 10%)
+  50:  hsl($neutral-h, 20%, 98%),
+  100: hsl($neutral-h, 20%, 95%),
+  200: hsl($neutral-h, 20%, 90%),
+  300: hsl($neutral-h, 20%, 80%),
+  400: hsl($neutral-h, 20%, 70%),
+  500: hsl($neutral-h, 20%, 60%),
+  600: hsl($neutral-h, 20%, 45%),
+  700: hsl($neutral-h, 20%, 35%),
+  800: hsl($neutral-h, 20%, 20%),
+  900: hsl($neutral-h, 20%, 10%)
 );
 
 // ======================================
 // NEUTRAL-DARK
 // ======================================
 $neutral-dark-h: 220;
-$neutral-dark-s: 10%;
-$neutral-dark-l: 10%;
-
 $neutral-dark: (
-  50:  hsl($neutral-dark-h, $neutral-dark-s, 95%),
-  100: hsl($neutral-dark-h, $neutral-dark-s, 80%),
-  200: hsl($neutral-dark-h, $neutral-dark-s, 70%),
-  300: hsl($neutral-dark-h, $neutral-dark-s, 55%),
-  400: hsl($neutral-dark-h, $neutral-dark-s, 45%),
-  500: hsl($neutral-dark-h, $neutral-dark-s, 35%),
-  600: hsl($neutral-dark-h, $neutral-dark-s, 25%),
-  700: hsl($neutral-dark-h, $neutral-dark-s, 18%),
-  800: hsl($neutral-dark-h, $neutral-dark-s, 12%),
-  900: hsl($neutral-dark-h, $neutral-dark-s, 8%)
+  50:  hsl($neutral-dark-h, 20%, 95%),
+  100: hsl($neutral-dark-h, 20%, 80%),
+  200: hsl($neutral-dark-h, 20%, 70%),
+  300: hsl($neutral-dark-h, 20%, 55%),
+  400: hsl($neutral-dark-h, 20%, 45%),
+  500: hsl($neutral-dark-h, 20%, 35%),
+  600: hsl($neutral-dark-h, 20%, 25%),
+  700: hsl($neutral-dark-h, 20%, 18%),
+  800: hsl($neutral-dark-h, 20%, 12%),
+  900: hsl($neutral-dark-h, 20%, 8%)
 );
 
 // ======================================
-// SUCCESS
+// SUCCESS - zielony
 // ======================================
 $success-h: 140;
-$success-s: 65%;
-$success-l: 45%;
-
 $success: (
-  100: hsl($success-h, $success-s, 95%),
-  200: hsl($success-h, $success-s, 85%),
-  300: hsl($success-h, $success-s, 75%),
-  400: hsl($success-h, $success-s, 65%),
-  500: hsl($success-h, $success-s, 55%),
-  600: hsl($success-h, $success-s, $success-l),
-  700: hsl($success-h, $success-s, 35%),
-  800: hsl($success-h, $success-s, 25%),
-  900: hsl($success-h, $success-s, 15%)
+  100: hsl($success-h, 85%, 95%),
+  200: hsl($success-h, 85%, 85%),
+  300: hsl($success-h, 85%, 75%),
+  400: hsl($success-h, 85%, 65%),
+  500: hsl($success-h, 85%, 55%),
+  600: hsl($success-h, 85%, 45%),
+  700: hsl($success-h, 85%, 35%),
+  800: hsl($success-h, 85%, 25%),
+  900: hsl($success-h, 85%, 15%)
 );
 
 // ======================================
-// WARNING
+// WARNING - żółty
 // ======================================
 $warning-h: 45;
-$warning-s: 100%;
-$warning-l: 50%;
-
 $warning: (
-  100: hsl($warning-h, $warning-s, 95%),
-  200: hsl($warning-h, $warning-s, 85%),
-  300: hsl($warning-h, $warning-s, 75%),
-  400: hsl($warning-h, $warning-s, 65%),
-  500: hsl($warning-h, $warning-s, 55%),
-  600: hsl($warning-h, $warning-s, $warning-l),
-  700: hsl($warning-h, $warning-s, 35%),
-  800: hsl($warning-h, $warning-s, 25%),
-  900: hsl($warning-h, $warning-s, 15%)
+  100: hsl($warning-h, 100%, 95%),
+  200: hsl($warning-h, 100%, 85%),
+  300: hsl($warning-h, 100%, 75%),
+  400: hsl($warning-h, 100%, 65%),
+  500: hsl($warning-h, 100%, 55%),
+  600: hsl($warning-h, 100%, 50%),
+  700: hsl($warning-h, 100%, 35%),
+  800: hsl($warning-h, 100%, 25%),
+  900: hsl($warning-h, 100%, 15%)
 );
 
 // ======================================
-// DANGER
+// DANGER - czerwony
 // ======================================
 $danger-h: 0;
-$danger-s: 75%;
-$danger-l: 50%;
-
 $danger: (
-  100: hsl($danger-h, $danger-s, 95%),
-  200: hsl($danger-h, $danger-s, 85%),
-  300: hsl($danger-h, $danger-s, 75%),
-  400: hsl($danger-h, $danger-s, 65%),
-  500: hsl($danger-h, $danger-s, 55%),
-  600: hsl($danger-h, $danger-s, $danger-l),
-  700: hsl($danger-h, $danger-s, 35%),
-  800: hsl($danger-h, $danger-s, 25%),
-  900: hsl($danger-h, $danger-s, 15%)
+  100: hsl($danger-h, 90%, 95%),
+  200: hsl($danger-h, 90%, 85%),
+  300: hsl($danger-h, 90%, 75%),
+  400: hsl($danger-h, 90%, 65%),
+  500: hsl($danger-h, 90%, 55%),
+  600: hsl($danger-h, 90%, 50%),
+  700: hsl($danger-h, 90%, 35%),
+  800: hsl($danger-h, 90%, 25%),
+  900: hsl($danger-h, 90%, 15%)
 );
 
 // ======================================

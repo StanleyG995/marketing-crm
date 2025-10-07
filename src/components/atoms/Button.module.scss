@@ -15,7 +15,7 @@
     transition: background-color .3s ease-in-out, color .3s ease-in-out;
 
     &:hover {
-        background-color: color($neutral, 100);
+        background-color: color($neutral, 500);
     }
 
     svg {
@@ -53,33 +53,80 @@
     }
 }
 
+.warning {
+    background-color: color($warning, 600);
+    border-color: transparent;
+    color: color($neutral, 100);
+    
+    &:hover {
+        background-color: color($warning, 500);
+    }
+}
+
+.danger {
+    background-color: color($danger, 600);
+    border-color: transparent;
+    color: color($neutral, 100);
+    
+    &:hover {
+        background-color: color($danger, 500);
+    }
+}
+
 .outline {
     background-color: transparent;
     border: 1px solid currentColor;
 
+    color: color($neutral, 800);
+
+    &:hover {
+        background-color: color($neutral, 600);
+        border: 1px solid transparent;
+        color: color($neutral, 100);
+    }
+   
+
     &.primary {
-        color: color($primary, 600);
+        color: color($primary, 700);
 
         &:hover {
-            background-color: color($primary, 600);
+            background-color: color($primary, 700);
             color: color($neutral, 100);
         }
     }
 
     &.secondary {
-        color: color($secondary, 700);
+        color: color($secondary, 800);
 
         &:hover {
-            background-color: color($secondary, 700);
+            background-color: color($secondary, 800);
             color: color($neutral, 100);
         }
     }
 
     &.success {
-        color: color($success, 600);
+        color: color($success, 700);
 
         &:hover {
-            background-color: color($success, 600);
+            background-color: color($success, 700);
+            color: color($neutral, 100);
+        }
+    }
+
+    &.warning {
+        color: color($warning, 700);
+
+        &:hover {
+            background-color: color($warning, 700);
+            color: color($neutral, 100);
+        }
+    }
+
+    &.danger {
+        color: color($danger, 700);
+
+        &:hover {
+            background-color: color($danger, 700);
             color: color($neutral, 100);
         }
     }
@@ -98,16 +145,5 @@
         order: 1;
         margin-left: space(s);
         margin-right: 0;
-    }
-}
-
-.outline {
-    background-color: transparent;
-    color: inherit;
-    border: 1px solid currentColor;
-
-    &:hover {
-        background-color: currentColor;
-        color: color($neutral, 100);
     }
 }

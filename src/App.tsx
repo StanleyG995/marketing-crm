@@ -9,28 +9,46 @@ function App() {
   return (
     <div className='app'>
       <Card title = 'Buttons filled'>
-        <p className = 'text-medium'>Buttons with background color.</p>
-        <Button className = 'button' variant = 'base' onclick = { () => console.log('Działa!') }>
+        <p className = 'text text-medium'>Buttons with background color.</p>
+        <Button className = 'button' variant = 'base' onclick = { () => console.log('Base pressed.') }>
         Base
         </Button>
-        <Button className = 'button' variant = 'primary' icon = {<FaArrowRightLong />} iconPosition = 'right' outline= { true }onclick = { () => console.log('Działa!') }>
+        <Button className = 'button' variant = 'primary' icon = {<FaArrowRightLong />} iconPosition = 'right' onclick = { () => console.log('Primary pressed.') }>
         Primary
         </Button>
-        <Button className = 'button' variant = 'secondary' icon = {<FaCheck />} onclick = { () => console.log('Działa!') }>
+        <Button className = 'button' variant = 'secondary' onclick = { () => console.log('Secondary pressed.') }>
         Secondary
+        </Button>
+        <Button className = 'button' variant = 'success' icon = {<FaCheck />} onclick = { () => console.log('Success pressed.') }>
+        Success
+        </Button>
+        <Button className = 'button' variant = 'warning' icon = {<FaCheck />} onclick = { () => console.log('Warning pressed.') }>
+        Warning
+        </Button>
+        <Button className = 'button' variant = 'danger' icon = {<FaCheck />} onclick = { () => console.log('daneerpressed.') }>
+        Danger
         </Button>
       </Card>
 
        <Card title = 'Buttons outline'>
-        <p className = 'text-medium'>Buttons with colored outline/text.</p>
-        <Button className = 'button' variant = 'base' onclick = { () => console.log('Działa!') }>
+        <p className = 'text text-medium'>Buttons with colored outline/text.</p>
+        <Button className = 'button' variant = 'base' outline = { true } onclick = { () => console.log('Base pressed.') }>
         Base
         </Button>
-        <Button className = 'button' variant = 'primary' icon = {<FaArrowRightLong />} iconPosition = 'right' outline= { true }onclick = { () => console.log('Działa!') }>
+        <Button className = 'button' variant = 'primary' outline = { true } icon = {<FaArrowRightLong />} iconPosition = 'right' onclick = { () => console.log('Primary pressed.') }>
         Primary
         </Button>
-        <Button className = 'button' variant = 'secondary' icon = {<FaCheck />} onclick = { () => console.log('Działa!') }>
+        <Button className = 'button' variant = 'secondary' outline = { true } onclick = { () => console.log('Secondary pressed.') }>
         Secondary
+        </Button>
+        <Button className = 'button' variant = 'success' outline = { true } icon = {<FaCheck />} onclick = { () => console.log('Success pressed.') }>
+        Success
+        </Button>
+        <Button className = 'button' variant = 'warning' outline = { true } icon = {<FaCheck />} onclick = { () => console.log('Warning pressed.') }>
+        Warning
+        </Button>
+        <Button className = 'button' variant = 'danger' outline = { true } icon = {<FaCheck />} onclick = { () => console.log('daneerpressed.') }>
+       Danger
         </Button>
       </Card>
       
