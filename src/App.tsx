@@ -2,6 +2,9 @@ import Card from './components/molecules/Card'
 import Button from './components/atoms/Button'
 import { FaCheck } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaExclamation } from "react-icons/fa6";
+import { FaX } from "react-icons/fa6";
+
 
 
 function App() {
@@ -22,10 +25,10 @@ function App() {
         <Button className = 'button' variant = 'success' icon = {<FaCheck />} onclick = { () => console.log('Success pressed.') }>
         Success
         </Button>
-        <Button className = 'button' variant = 'warning' icon = {<FaCheck />} onclick = { () => console.log('Warning pressed.') }>
+        <Button className = 'button' variant = 'warning' icon = {<FaExclamation />} onclick = { () => console.log('Warning pressed.') }>
         Warning
         </Button>
-        <Button className = 'button' variant = 'danger' icon = {<FaCheck />} onclick = { () => console.log('daneerpressed.') }>
+        <Button className = 'button' variant = 'danger' icon = {<FaX />} onclick = { () => console.log('daneerpressed.') }>
         Danger
         </Button>
       </Card>
@@ -44,10 +47,10 @@ function App() {
         <Button className = 'button' variant = 'success' outline = { true } icon = {<FaCheck />} onclick = { () => console.log('Success pressed.') }>
         Success
         </Button>
-        <Button className = 'button' variant = 'warning' outline = { true } icon = {<FaCheck />} onclick = { () => console.log('Warning pressed.') }>
+        <Button className = 'button' variant = 'warning' outline = { true } icon = {<FaExclamation />} onclick = { () => console.log('Warning pressed.') }>
         Warning
         </Button>
-        <Button className = 'button' variant = 'danger' outline = { true } icon = {<FaCheck />} onclick = { () => console.log('daneerpressed.') }>
+        <Button className = 'button' variant = 'danger' outline = { true } icon = {<FaX />} onclick = { () => console.log('daneerpressed.') }>
        Danger
         </Button>
       </Card>

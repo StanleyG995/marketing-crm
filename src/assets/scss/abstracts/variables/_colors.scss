@@ -1,52 +1,52 @@
 @use 'sass:map';
 
 // ======================================
-// PRIMARY - fiolet
+// PRIMARY - purple
 // ======================================
 $primary-h: 270;
 $primary: (
-  100: hsl($primary-h, 95%, 95%),
-  200: hsl($primary-h, 95%, 85%),
-  300: hsl($primary-h, 95%, 75%),
-  400: hsl($primary-h, 95%, 65%),
-  500: hsl($primary-h, 95%, 55%),
-  600: hsl($primary-h, 95%, 45%),
-  700: hsl($primary-h, 95%, 35%),
-  800: hsl($primary-h, 95%, 25%),
-  900: hsl($primary-h, 95%, 15%)
+  100: hsl($primary-h, 85%, 85%),
+  200: hsl($primary-h, 90%, 75%),
+  300: hsl($primary-h, 95%, 65%),
+  400: hsl($primary-h, 95%, 55%),
+  500: hsl($primary-h, 95%, 45%),
+  600: hsl($primary-h, 95%, 40%),
+  700: hsl($primary-h, 95%, 30%),
+  800: hsl($primary-h, 95%, 20%),
+  900: hsl($primary-h, 95%, 10%)
 );
 
 // ======================================
-// SECONDARY - turkus
+// SECONDARY - turquoise
 // ======================================
 $secondary-h: 170;
 $secondary: (
-  100: hsl($secondary-h, 90%, 95%),
-  200: hsl($secondary-h, 90%, 85%),
-  300: hsl($secondary-h, 90%, 75%),
-  400: hsl($secondary-h, 90%, 65%),
-  500: hsl($secondary-h, 90%, 55%),
-  600: hsl($secondary-h, 90%, 45%),
-  700: hsl($secondary-h, 90%, 35%),
-  800: hsl($secondary-h, 90%, 25%),
-  900: hsl($secondary-h, 90%, 15%)
+  100: hsl($secondary-h, 70%, 85%),
+  200: hsl($secondary-h, 80%, 75%),
+  300: hsl($secondary-h, 90%, 65%),
+  400: hsl($secondary-h, 95%, 55%),
+  500: hsl($secondary-h, 95%, 45%),
+  600: hsl($secondary-h, 95%, 40%),
+  700: hsl($secondary-h, 95%, 30%),
+  800: hsl($secondary-h, 95%, 20%),
+  900: hsl($secondary-h, 95%, 10%)
 );
 
 // ======================================
-// NEUTRAL - szarości
+// NEUTRAL - greys
 // ======================================
 $neutral-h: 220;
 $neutral: (
-  50:  hsl($neutral-h, 20%, 98%),
-  100: hsl($neutral-h, 20%, 95%),
-  200: hsl($neutral-h, 20%, 90%),
-  300: hsl($neutral-h, 20%, 80%),
-  400: hsl($neutral-h, 20%, 70%),
-  500: hsl($neutral-h, 20%, 60%),
-  600: hsl($neutral-h, 20%, 45%),
-  700: hsl($neutral-h, 20%, 35%),
-  800: hsl($neutral-h, 20%, 20%),
-  900: hsl($neutral-h, 20%, 10%)
+  50:  hsl($neutral-h, 15%, 95%),
+  100: hsl($neutral-h, 20%, 90%),
+  200: hsl($neutral-h, 25%, 80%),
+  300: hsl($neutral-h, 25%, 70%),
+  400: hsl($neutral-h, 25%, 60%),
+  500: hsl($neutral-h, 25%, 50%),
+  600: hsl($neutral-h, 25%, 40%),
+  700: hsl($neutral-h, 25%, 30%),
+  800: hsl($neutral-h, 25%, 20%),
+  900: hsl($neutral-h, 25%, 10%)
 );
 
 // ======================================
@@ -54,11 +54,11 @@ $neutral: (
 // ======================================
 $neutral-dark-h: 220;
 $neutral-dark: (
-  50:  hsl($neutral-dark-h, 20%, 95%),
-  100: hsl($neutral-dark-h, 20%, 80%),
-  200: hsl($neutral-dark-h, 20%, 70%),
-  300: hsl($neutral-dark-h, 20%, 55%),
-  400: hsl($neutral-dark-h, 20%, 45%),
+  50:  hsl($neutral-dark-h, 20%, 85%),
+  100: hsl($neutral-dark-h, 20%, 70%),
+  200: hsl($neutral-dark-h, 20%, 60%),
+  300: hsl($neutral-dark-h, 20%, 50%),
+  400: hsl($neutral-dark-h, 20%, 40%),
   500: hsl($neutral-dark-h, 20%, 35%),
   600: hsl($neutral-dark-h, 20%, 25%),
   700: hsl($neutral-dark-h, 20%, 18%),
@@ -67,55 +67,55 @@ $neutral-dark: (
 );
 
 // ======================================
-// SUCCESS - zielony
+// SUCCESS - green
 // ======================================
 $success-h: 140;
 $success: (
-  100: hsl($success-h, 85%, 95%),
-  200: hsl($success-h, 85%, 85%),
-  300: hsl($success-h, 85%, 75%),
-  400: hsl($success-h, 85%, 65%),
-  500: hsl($success-h, 85%, 55%),
-  600: hsl($success-h, 85%, 45%),
-  700: hsl($success-h, 85%, 35%),
-  800: hsl($success-h, 85%, 25%),
-  900: hsl($success-h, 85%, 15%)
+  100: hsl($success-h, 70%, 85%),
+  200: hsl($success-h, 80%, 75%),
+  300: hsl($success-h, 90%, 65%),
+  400: hsl($success-h, 95%, 55%),
+  500: hsl($success-h, 95%, 45%),
+  600: hsl($success-h, 95%, 40%),
+  700: hsl($success-h, 95%, 30%),
+  800: hsl($success-h, 95%, 20%),
+  900: hsl($success-h, 95%, 10%)
 );
 
 // ======================================
-// WARNING - żółty
+// WARNING - yellow
 // ======================================
 $warning-h: 45;
 $warning: (
-  100: hsl($warning-h, 100%, 95%),
-  200: hsl($warning-h, 100%, 85%),
-  300: hsl($warning-h, 100%, 75%),
-  400: hsl($warning-h, 100%, 65%),
-  500: hsl($warning-h, 100%, 55%),
-  600: hsl($warning-h, 100%, 50%),
-  700: hsl($warning-h, 100%, 35%),
-  800: hsl($warning-h, 100%, 25%),
-  900: hsl($warning-h, 100%, 15%)
+  100: hsl($warning-h, 80%, 85%),
+  200: hsl($warning-h, 90%, 75%),
+  300: hsl($warning-h, 100%, 65%),
+  400: hsl($warning-h, 100%, 55%),
+  500: hsl($warning-h, 100%, 45%),
+  600: hsl($warning-h, 100%, 40%),
+  700: hsl($warning-h, 100%, 30%),
+  800: hsl($warning-h, 100%, 20%),
+  900: hsl($warning-h, 100%, 10%)
 );
 
 // ======================================
-// DANGER - czerwony
+// DANGER - red
 // ======================================
 $danger-h: 0;
 $danger: (
-  100: hsl($danger-h, 90%, 95%),
-  200: hsl($danger-h, 90%, 85%),
-  300: hsl($danger-h, 90%, 75%),
-  400: hsl($danger-h, 90%, 65%),
-  500: hsl($danger-h, 90%, 55%),
-  600: hsl($danger-h, 90%, 50%),
-  700: hsl($danger-h, 90%, 35%),
-  800: hsl($danger-h, 90%, 25%),
-  900: hsl($danger-h, 90%, 15%)
+  100: hsl($danger-h, 70%, 85%),
+  200: hsl($danger-h, 80%, 75%),
+  300: hsl($danger-h, 90%, 65%),
+  400: hsl($danger-h, 95%, 55%),
+  500: hsl($danger-h, 95%, 45%),
+  600: hsl($danger-h, 95%, 40%),
+  700: hsl($danger-h, 95%, 30%),
+  800: hsl($danger-h, 95%, 20%),
+  900: hsl($danger-h, 95%, 10%)
 );
 
 // ======================================
-// Helper for getting color
+// Helper function for getting color
 // ======================================
 @function color($palette, $shade) {
   @return map.get($palette, $shade);
