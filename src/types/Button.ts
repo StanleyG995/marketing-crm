@@ -10,4 +10,6 @@ export type ButtonProps = {
 
     disabled?: boolean
     type?: 'submit' | 'button' | 'reset'
+
+    outline?: boolean
 }
