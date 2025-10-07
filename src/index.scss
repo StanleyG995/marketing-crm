@@ -1,2 +1,10 @@
 @use './assets/scss/base/reset' as *;
 @use './assets/scss/base/typography' as *;
+@use './assets/scss/abstracts/variables/spacing' as *;
+
+.app {
+    display: flex;
+    padding: space(m);
+    flex-direction: row;
+    gap: space(m);
+}

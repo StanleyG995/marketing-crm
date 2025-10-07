@@ -2,8 +2,15 @@
 @use '../../assets/scss/abstracts/variables/radius' as *;
 @use '../../assets/scss/abstracts/variables/spacing' as *;
 
-.card {
+.card  {
     background: color($neutral, 200);
     border-radius: radius(s);
-    padding: space(m)
+    padding: space(m);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: space(m);
+    }
 }
+

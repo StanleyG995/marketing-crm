@@ -7,13 +7,13 @@ const Card: React.FC<CardProps> = ( {title, children, className} ) => {
     
     const classes = [
         styles.card,
-        className
-    ].filter(Boolean).join()
+        className,
+    ].filter(Boolean).join(" ")
     
     return (
         <div className={classes}>
-            <h2 className="card__title">{title}</h2>
-            <div className="card__content">{children}</div>
+            <h2 className={styles['card__title']}>{title}</h2>
+            <div className={styles['card__content']}>{children}</div>
         </div>
     )
 }
